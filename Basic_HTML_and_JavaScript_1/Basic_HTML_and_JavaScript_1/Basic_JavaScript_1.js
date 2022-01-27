@@ -1,6 +1,1 @@
-<!DOCTYPE HTML>
-<html>
-<script>
-alert("Hello, world");
-</script>
-</html>
+alert("Assignment 10, 11");
