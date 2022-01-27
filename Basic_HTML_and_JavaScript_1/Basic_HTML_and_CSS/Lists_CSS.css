@@ -1,0 +1,10 @@
+ol{
+	list-style-type: upper-roman;
+	font-size: 24;
+	text-shadow: 2PX 2PX 5px red;
+}
+ul{
+	list-style-type: square;
+	font-size: 24;
+	text-shadow: 2PX 2PX 5px red;
+}
