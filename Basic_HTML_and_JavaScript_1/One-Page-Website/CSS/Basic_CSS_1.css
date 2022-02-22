@@ -4,6 +4,9 @@ p{ 	color:"red";
 	
 	font-size: 36;
 	text-shadow: 4PX 4PX 8px red;
+	font-family: "serif";
+	
+
 	}
 	
 	h3{ 	color:"Green";
@@ -12,4 +15,10 @@ p{ 	color:"red";
 	font-size: 36;
 	text-shadow: 4PX 4PX 8px green;
 	}
-	
+	input{
+	border-width:4px;
+	border:double;
+	margin:10px;
+		
+
+	}
