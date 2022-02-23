@@ -290,5 +290,36 @@ head-sub-main{
 
     }
 
+.submit input[input="submit"] {
+	color: rgb(255,255,255)
+	cursor=pointer;
+	border:none;
+	font-weight:900;
+	outline:none;
+	text-align:center;
+	font-family:'Raleway', sans-serif;
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 10px;
+	transition: background-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7ab;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
 
+
+.submit input[type="submiy"]: hover {
+	color: #000;
+	background-color: #8D8E0F;
+	box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.5);
+	
+}
+
+#footer {
+	background-color: rgba(100,65,0,.3)
+	color: #000;
+	text-shadow: 2px 2px 8px 0 rgba(0,0,0,0.4);
+	padding: 20px 50px 20px 50px;
+}
    
