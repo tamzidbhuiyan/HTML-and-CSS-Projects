@@ -11,8 +11,8 @@ body
 {
     font-size: 14px;
     margin: 0;
-    font-family: "helvetica heue", Helvetica, Arial, sans-serif ;
-    line-height: 1.4;
+    font-family: "helvetica Neue", Helvetica, Arial, sans-serif ;
+    line-height: 1.42857143;
     color: #333;
     background-color: #fff;
 
@@ -23,7 +23,7 @@ nav{
     display: block;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family: sans-serif, "open sans";
+    font-family: 'open sans', sans-serif;
 }
 
 h1{
@@ -34,6 +34,16 @@ h1{
     text-align: center;
     color: #E91C1C;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+/* This is the underline */
+h1:after {
+	 display: block;
+     content: "";
+     height: 2px;
+     width: 150px;
+     background: #E91C1C;
+     margin: 5px auto 40px;
+     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h2{
@@ -47,7 +57,7 @@ h3{
 }
 
 h4{
-    padding-top: 20px;
+    padding-top: 25px;
     line-height: 40px;
     padding-bottom: 0px;
     font-size: 22px;
@@ -66,7 +76,7 @@ p{
     text-align: center;
 }
 .height-padding{
-    padding-bottom: 40%;
+    padding-bottom: 40px;
 }
 
 section{
@@ -77,7 +87,7 @@ section{
 
 .navbar{
     height: 105px;
-    max-height: 15px;
+    max-height: 340px;
     display: block;
 }
 
@@ -87,7 +97,12 @@ section{
     margin-right: auto;
     margin-left: auto;
 }
-
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;       
+  }
 .row{
     margin-right: -15px;
     margin-left: -15px;
@@ -106,6 +121,9 @@ section{
     height: 100%;
     width: 100%;
     position: absolute;
+	  /* This ensures that the images cannot
+        render outside of their container
+        without forcing any scrollbars */
     overflow: hidden;
     top: 0;
     left: 0;
@@ -116,12 +134,15 @@ section{
 
     max-height: 340px;
     margin: 0% auto;
-    content: "";
+    content: " ";
     width: 100%;
     position: fixed;
     z-index: 100;
 }
 
+  /*==================================
+    HOME SECTION STYLES
+    =====================*/
 #home
 {
     background: url(../Project/Images/planets.jpg no-repeat 50% 50%);
@@ -133,8 +154,8 @@ section{
     width: 100%;
     display:black;
     height:auto;
-    padding-top: 350px;
-    padding-bottom: 500px;
+    padding-top: 350px;/* This is spacer before the Main title Logo */
+    padding-bottom: 500px;/* This is spacer after the Main title Logo */
     color:#fff;
 
 }
@@ -150,8 +171,8 @@ section{
     font-family: impact, sans-serif;
     line-height: 2;
     font-weight: 900;
-    border: 5PX double #FFF;
-    padding: 10px;
+    border: 5px double #fff;
+    padding: 5px;
 
 }
 
@@ -181,32 +202,33 @@ head-sub-main{
         padding: 10px;
         border-radius: 8px;
         margin: 0px auto;
-        background-color: rgba(100, 65, 0, .3);
+        background-color: rgba(100, 65, 0, 0.3);
         box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
     }
 
 
-    #contact{
-        background-color: #f5f3f3;
+    .contact{
+        background-color: #F5F3F3;
     }
 
     .reservation{
-        width: 60px;
+        width: 60%;
         padding: 10px;
         border-radius: 8px;
         margin: 0px auto;
-        background-color: rgba(100, 65, 0, .3);
-        box-shadow: -1px -1px -1px 0 rgba(0, 0, 0, 0.1) , 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+        background-color: rgba(100, 65, 0, 0.3);
+        box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1) , 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
     
   }
    .reservation h2{
        width: 70%;
        text-align: center;
        margin: 0 auto;
-       color: #13161b;
-       font-weight: 500;
-       font-size: 1.3em;
-       letter-spacing: 0PT;
+       color: #13161B;
+       font-weight: 900;
+       font-size: 1.5em;
+	   font-variant:small-caps;
+       letter-spacing: 0pt;
        word-spacing: 0pt;
 
    }
@@ -219,13 +241,13 @@ head-sub-main{
      color: #13161b;
      font-weight: 900;
      font-size: 1.3em;
-     letter-spacing: 0pt;
-     word-spacing: 0pt;
+     letter-spacing: .4pt;
+     word-spacing: .3pt;
 
    }
 
    .reservation p{
-       color: #13161b;
+       color: #13161B;
        width: 50%;
        margin: 0 auto;
 
@@ -235,34 +257,42 @@ head-sub-main{
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
+    color: #8D8E0F;
     padding: 12px 12px;
        width: 70%;
        border: 1px solid #808080;
        margin: 2% auto;
-       border-radius: 7PX;
-       background: rgba(0, 0, 0, 0.3) ;
+       border-radius: 7px;
+       background: rgb(227,222, 222);
+	   box-shadow 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
        font-family: "Raleway" sans-serif;
    }
-   .reservation input{ 
+   /* The palceholder text was too dim for my liking.  So I found a way to make it 
+   the color of when you start typing into the form    */
+
+:::placeholder {
+    color: #8D8E8F;
+    opacity: 1;
+}}
+   .reservation input[type="text"] { 
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
+    color: #8D8E8F;
     padding: 2% 1% 2% 7%;
        width: 80%;
-       border-top: 1px solid #090b0d;
+       border-top: 1px solid #090B0D;
        border-right: 2px solid #424549;
        border-bottom: 2px solid #424549;
-       border-left: 1px solid #090b0d;
+       border-left: 1px solid #090B0D;
        margin: 10px 1em;
-       border-radius: #13161b;
+       border-radius: #13161B;
        box-shadow: inset 0px 3px 0px opx rgba(5, 5, 5, 0.15);
-       font-family: "Raleway" sans-serif;
+       font-family: 'Raleway' sans-serif;
    }
 
    .reservation input[type="text"] :hover {
-       box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+       box-shadow: 0 0 10px rgba(100, 65, 0, 0.8);
    }
 
    .form-spacer{
@@ -271,8 +301,7 @@ head-sub-main{
 
 
    .terms{
-       margin: 30px 1px 0 0;
-       padding-left: 52px;
+       margin: 23px 41px 0 0;
        font-size: 14px;
        line-height: 5px;
        color: #000;
@@ -301,21 +330,23 @@ head-sub-main{
 	margin: 0px 3%;
 	padding: 7px 0px;
 	width: 25%;
-	font-size: 10px;
+	font-size: 18px;
 	transition: background-color 0.3s color 0.3s background-color 0.3s;
 	border-radius: 7px;
-	background-color: #797a7ab;
+	background-color: #797A7B;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 
 
 .submit input[type="submiy"]: hover {
 	color: #000;
-	background-color: #8D8E0F;
-	box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.5);
+	background-color: #8D8E8F;
+	box-shadow:inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 	
 }
-
+/*=======================
+  FOOTER STYLES
+  ======================================*/
 #footer {
 	background-color: rgba(100,65,0,.3)
 	color: #000;
