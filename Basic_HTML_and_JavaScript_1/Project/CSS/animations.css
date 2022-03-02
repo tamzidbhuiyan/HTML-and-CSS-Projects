@@ -1,4 +1,5 @@
 
+/*====================== menu section Animation===========*/
 .menu {
 	color: #f00;
 	font: bold 12px/18px sans-serif;
@@ -32,9 +33,9 @@
 	background-color: rgba(100,65,0,0.3);
 }
 
-/*=============
+/*==================================
   GALLERY SECTION ANIMATION
-  */
+  ==================================*/
 .photo {
 	position: relative;
 	line-height: 0;
@@ -69,7 +70,7 @@
 	left: 0;
 	padding-left: 20px;
 	padding-right: 20px;
-	justify-content: center; 
+	justify-content: center; /* for center text inside .photo-overlay */
 	align-items: center;
 	background: rgba(0,0,0,0.5);
 }
@@ -79,9 +80,9 @@
 	margin-top: 5%;
 }
 
-/* ======
-   Photo Overlay Transitions
- =*/
+/* ====================================
+   Photo Ove=rlay Transitions
+ ===============================*/
 .photo-overlay {
 	opacity: 0;
 	transition: opacity .5s;
