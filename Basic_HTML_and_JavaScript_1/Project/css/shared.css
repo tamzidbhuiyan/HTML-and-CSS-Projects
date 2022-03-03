@@ -332,7 +332,7 @@ section{
 	padding: 7px 0px;
 	width: 25%;
 	font-size: 18px;
-	transition: background-color, 0.3s color, 0.3s background-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, background-color 0.3s;
 	border-radius: 7px;
 	background-color: #797A7B;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
